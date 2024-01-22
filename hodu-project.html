@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Hodu</title>
+    <link href="hodu-project.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@300;700&family=Heebo&family=Nanum+Pen+Script&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+<div id="wrap">
+    <!-- header -->
+    <div id = "header">
+        <div id = "header-wrap">
+
+            <section id="menu-contain">
+                <div>
+                    <img id="logo" src="img/Logo-head.png"/>
+                </div>
+                <div>
+                    <a class="menu-items" href="https://www.example.com" target="_blank">Home</a>
+                    <a class="menu-items" href="https://www.example.com" target="_blank">About</a>
+                    <a class="menu-items" href="https://www.example.com" target="_blank">Support</a>
+                    <button class="download-button">Download</button>
+                </div>
+            </section>
+
+            <section id="first-section">
+                <div class='text-contain'>
+                    <h1 id="title-text">Lorem Ipsum is simply <br>
+                        dummy text of the printing and
+                    </h1>
+                    <p id="content-text">
+                        Lorem Isspsum is simply dummy text of the printing and
+                        <br>typesetting industry.
+                        <br>Lorem Ipsum has been the industry's standard dummy text
+                        <br>ever since the 1500s, when an unknown
+                    </p>
+
+                    <button class="download-button">Download</button>
+                </div>
+
+                <div>
+                    <img id="header-img" src="img/img_cat_png.png"/>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- container -->
+    <div id = "container">
+        <div id = "container-first-section">
+            <img id="container-first-section-img" src="img/img_2.png" alt="middle-img">
+            <div id="container-first-section-text">
+                <h2 id = "container-tittle">Lorem Ipsum is simply
+                    <br>dummy text of the printing
+                    <br>and dummy text
+                </h2>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting
+                    <br>industry. </p>
+            </div>
+        </div>
+
+        <section id="container-second-section">
+            <h3 id="container-second-tittle"> dummy text of the printing and dummy</h3>
+            <p> Lorem Ipsum is simply <strong>dummy text</strong> of the printing and typesetting industry
+                <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+            <div id="image-layout">
+                <p id = "img-first">
+                    <img src="img/img_1_f.png" alt="img_1_f" class="container-second-section-img"/>
+                    <img src="img/img_2_f.png" alt="img_2_f" class="container-second-section-img"/>
+                    <img src="img/img_3_f.png" alt="img_3_f" class="container-second-section-img"/>
+                </p>
+                <p id = img-second>
+                    <img src="img/img_1_s.png" alt="img_1_s" class="container-second-section-img"/>
+                    <img src="img/img_2 _s.png" alt="img_2_s" class="container-second-section-img"/>
+                    <img src="img/img_3 _s.png" alt="img_3_s" class="container-second-section-img"/>
+                </p>
+                <p id="continue-text">continue exploring HODU</p>
+            </div>
+            <button id="show-more-button" class="common-button">Show more</button>
+        </section>
+
+        <section id="map-guide">
+            <hr class="line">
+            <h4 class=""map-guide-text>Where you'll be</h4>
+            <p class="map-guide-text"> 330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+            <div id="map"></div>
+        </section>
+    </div>
+
+    <!-- footer -->
+    <div id = "footer">
+
+        <div id = "subscribe-layout">
+            <aside class="subscribe">
+                <div id=subscribe-explain>
+                    <h3 class="sub-explain-h">Subscribe to our Blog post</h3>
+                    <p class="sub-explain-p">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                        Lorem Ipsum has been the industry's standard dummy text </p>
+                </div>
+                <div>
+                    <input type="email" id="email-text" placeholder="Enter your e-mail address">
+                    <button id="subscribe-button" type="button">Subscribe</button>
+                </div>
+            </aside>
+
+        </div>
+
+        <div>
+            <img id="footer-image" src="img/img_bottom.png"/>
+            <img id="scrollToTopBtn" src="img/scroll-top-btn.png">
+        </div>
+
+        <section id="bottom-section">
+            <img src="img/Logo-fin.png" height="70" width="226"/>
+            <div>
+                <a href="https://section.blog.naver.com/" target="_blank" class="image-link">
+                    <img src="img/icon-blog.png"/>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="image-link"> <img src="img/icon-insta.png"/>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" class="image-link">
+                    <img src="img/icon-facebook.png"/>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" class="image-link">
+                    <img src="img/icon-youtube.png"/>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+
+    <article class="modal-page">
+        <div class="modal-sec">
+            <img id="modal-cat" src="img/modal_cat.png"/>
+            <p class="thanks-text">Thank you!</p>
+            <p class="thanks-text2">Lorem Ipsum is simply dummy text of the printing industry.</p>
+            <button type="button" class="common-button thanks">OK! I Love HODU</button>
+        </div>
+    </article>
+    <script src="js/modal.js"></script>
+
+</div>
+
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ca98e890c4c5fd54f6c92921635dd109"></script>
+<script src="js/download.js"></script>
+<script type="text/javascript" src="js/kakaoMap.js"></script>
+<script src="js/subscribe.js"></script>
+<script src="js/image.js"></script>
+<script src="js/scroll.js"></script>
+
+
+
+
+
+
+</body>
+</html>

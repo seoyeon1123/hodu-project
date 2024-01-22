@@ -22,4 +22,3 @@ const marker = new kakao.maps.Marker({
 });
 
 marker.setMap(map);
-

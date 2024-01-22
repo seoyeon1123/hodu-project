@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const button = document.getElementById("subscribe_button");
+    const button = document.getElementById("subscribe-button");
 
     button.addEventListener("click", function() {
         const emailInput = document.querySelector('.subscribe input[type="email"]');
