@@ -1,21 +1,25 @@
-// 모든 클래스가 "button"인 요소를 선택
-const buttons = document.querySelectorAll('.download-button');
+// 모든 클래스가 "download-button"인 요소를 선택
+const buttons = document.getElementsByClassName('download-button');
 
 // 각 버튼에 대해 이벤트 리스너 등록
-buttons.forEach(button => {
+for (const button of buttons) {
     button.addEventListener('click', function() {
-        // 텍스트 파일 생성
-        const textContent = 'Hello, I am HODU!';
-        const blob = new Blob([textContent], { type: 'text/plain' });
+        // 이미지 파일 경로 (이 부분을 실제 이미지 파일 경로로 변경)
+        const imageUrl = 'img/img_cat_png.png';
 
-        // a 태그를 생성하여 다운로드 링크 설정
-        const downloadLink = document.createElement('a');
-        downloadLink.href = window.URL.createObjectURL(blob);
-        downloadLink.download = 'HODU_file.txt';
+        // 이미지 파일을 가져와 Blob 생성
+        fetch(imageUrl)
+            .then(response => response.blob())
+            .then(blob => {
+                // a 태그를 생성하여 다운로드 링크 설정
+                const downloadLink = document.createElement('a');
+                downloadLink.href = window.URL.createObjectURL(blob);
+                downloadLink.download = 'hodu-img.png'; // 다운로드될 파일명
 
-        // a 태그 클릭 및 제거
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
-        document.body.removeChild(downloadLink);
+                // a 태그 클릭 및 제거
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
+                document.body.removeChild(downloadLink);
+            });
     });
-});
+}
