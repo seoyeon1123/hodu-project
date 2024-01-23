@@ -3,6 +3,12 @@
 ### 
 
 # （=・ω・） Hodu 프로젝트（・ω・=）
+![Logo-head.png](img%2FLogo-head.png)
+
+#### 프로젝트 기간 : 2023.01.16 ~ 2023.01.23
+#### 프로젝트 배포 주소 : https://seoyeon1123.github.io/hodu-project/
+
+---
 
 ## 👊🏻 프로젝트 시작하기 전
 
