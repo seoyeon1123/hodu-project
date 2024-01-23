@@ -1,6 +1,4 @@
 // image.js 파일
-
-// 쓰로틀링 함수 정의
 const throttle = (callback, delay) => {
     let timer = null;
     return () => {

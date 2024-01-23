@@ -307,6 +307,32 @@ h4 {
 /* footer end*/
 
 /* modal start*/
+/* modal.css */
+.custom-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.modal-content {
+    margin-bottom: 20px;
+}
+
+#closeModalBtn {
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
 
 .modal-page {
     display: none;
@@ -354,5 +380,4 @@ h4 {
     line-height: 18px;
     color: black;
 }
-
 /* modal end*/

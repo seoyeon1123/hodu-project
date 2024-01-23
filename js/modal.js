@@ -1,12 +1,10 @@
-
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('subscribe-button').addEventListener('click', function () {
-        document.querySelector('.modal-page').style.display = 'block';
-        document.querySelector('.modal-sec').style.display = 'block';
-    });
+    const modalPage = document.querySelector('.modal-page');
+    const modalSec = document.querySelector('.modal-sec');
+    const modalThanksButton = document.querySelector('.thanks');
 
-    document.querySelector('.thanks').addEventListener('click', function () {
-        document.querySelector('.modal-page').style.display = 'none';
-        document.querySelector('.modal-sec').style.display = 'none';
+    modalThanksButton.addEventListener('click', function () {
+        modalPage.style.display = 'none';
+        modalSec.style.display = 'none';
     });
 });

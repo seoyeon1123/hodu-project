@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
     window.onscroll = function () {
-        // Show the button when user scrolls down 20px from the top
         if (document.documentElement.scrollTop > 20) {
             scrollToTopBtn.style.display = 'block';
         } else {
