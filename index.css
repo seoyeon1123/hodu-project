@@ -295,12 +295,15 @@ h4 {
     padding: 40px; /* Optional: Add padding if needed */
 }
 
+.image-link {
+    text-decoration: none;
+}
+
 .image-link img {
-    width: 60px; /* Adjust the width of your icons */
+    width: 60px; /* 아이콘의 너비 조절 */
     height: 60px;
     margin-left: 10px;
 }
-
 /* footer end*/
 
 /* modal start*/
