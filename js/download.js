@@ -10,7 +10,7 @@ for (const button of buttons) {
 
                 const downloadLink = document.createElement('a');
                 downloadLink.href = window.URL.createObjectURL(blob);
-                downloadLink.download = 'hodu-img.png'; // 다운로드될 파일명
+                downloadLink.download = 'hodu-img.png';
 
 
                 document.body.appendChild(downloadLink);
