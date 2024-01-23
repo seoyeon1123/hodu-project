@@ -287,18 +287,18 @@ h4 {
 }
 
 #bottom-section {
-    width: 1280px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
-    margin: 30px auto;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 30px; /* Optional: Add padding if needed */
 }
-.image-link {
-    height: 42px;
-    width: 42px;
+
+.image-link img {
+    width: 60px; /* Adjust the width of your icons */
+    height: 60px;
     margin-left: 10px;
-    text-decoration: none;
 }
 
 /* footer end*/
